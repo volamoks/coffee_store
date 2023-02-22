@@ -1,0 +1,56 @@
+@import '../../utilities/variables.scss';
+
+.grid_container {
+    display: grid;
+    justify-content: center;
+    min-width: 900px;
+    min-height: 1000px;
+    position: relative;
+    &_descr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        .img {
+            display: grid;
+            grid-row: span 2;
+            justify-content: center;
+            align-items: center;
+            img {
+                display: grid;
+                width: 400px;
+            }
+        }
+
+        .descr {
+            text-align: start;
+            display: grid;
+            justify-content: start;
+            h1 {
+                font-size: 50px;
+                font-style: bold;
+                font-weight: 600;
+                color: $main_Color4;
+            }
+            &__buttons {
+                margin-top: 50px;
+                .btn {
+                    width: 150px;
+                    height: 50px;
+                    margin: 10px;
+                    border-radius: 0;
+                    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+                    font-size: 18px;
+                    font-weight: bold;
+                    &_shop {
+                        background: $main_Color4;
+                        color: aliceblue;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: $hover;
+                    }
+                }
+            }
+        }
+    }
+}

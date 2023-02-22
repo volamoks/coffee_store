@@ -1,0 +1,31 @@
+.modal_window {
+    // position: absolute;
+    display: grid;
+    justify-self: start;
+    grid-template-rows: 5fr 1fr;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgba($color: #000000, $alpha: 0.2);
+    justify-content: center;
+    z-index: 1;
+    &_container {
+        display: none;
+        justify-content: center;
+        .active {
+            display: grid;
+        }
+        btn {
+            position: absolute;
+            z-index: 2;
+            color: blue;
+        }
+    }
+    img {
+        width: 612px;
+        height: auto;
+        padding: 100px;
+    }
+}
+
+.active {
+    display: grid;
+}

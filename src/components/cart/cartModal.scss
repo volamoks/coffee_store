@@ -1,0 +1,67 @@
+@import '../../utilities/variables.scss';
+
+.modal__cart {
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr 1fr 2fr;
+    justify-content: space-between;
+    font-size: 14px;
+    &__items {
+        display: grid;
+        margin-bottom: 5px;
+    }
+    &__window {
+        align-items: flex-start;
+        text-align: left;
+        justify-content: space-between;
+        padding: 20px;
+        width: 500px;
+        min-height: 100px;
+        border: $thin_border;
+        position: absolute;
+        top: 100px;
+        right: 350px;
+        z-index: 2;
+    }
+}
+
+.modal__item {
+    &__namee {
+        text-align: left;
+        margin: 5px;
+    }
+    &__price {
+        text-align: right;
+    }
+}
+.cart__total {
+    display: grid;
+    justify-content: end;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 20px;
+    text-align: right;
+    &__empty {
+        display: flex;
+        text-align: center;
+    }
+    h3 {
+        margin: 10px;
+    }
+}
+
+.btn {
+    &__quantity {
+        width: 20px;
+        border: none;
+    }
+
+    &__color {
+        display: flex;
+        align-self: end;
+        background-color: $main_Color4;
+        color: white;
+        font-style: bold;
+        padding: 10px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}

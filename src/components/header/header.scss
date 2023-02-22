@@ -1,0 +1,49 @@
+@import '../../utilities/variables.scss';
+
+.header {
+    &__container {
+        background-size: 100%;
+        color: $text_color;
+        text-align: center;
+        margin-bottom: 70px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        ul {
+            list-style-type: none;
+            display: flex;
+            li a {
+                text-decoration: none;
+                padding-right: 30px;
+                color: $text_color active {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__logo {
+        display: grid;
+        justify-self: end;
+        grid-template-columns: 1fr 1fr;
+        justify-content: end;
+        padding-left: 30px;
+        align-items: center;
+    }
+}
+
+.btn__modal__cart {
+    margin-right: 30px;
+    width: 100px;
+    height: 30px;
+    justify-self: end;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    justify-self: end;
+}

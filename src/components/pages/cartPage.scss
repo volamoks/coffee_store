@@ -1,0 +1,12 @@
+.cartList__container {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: 10fr 10fr 1fr;
+    font-weight: 600;
+    height: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+.cart_list_total {
+    font-weight: normal;
+}

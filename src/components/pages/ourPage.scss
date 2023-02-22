@@ -1,0 +1,24 @@
+.grid_container {
+    display: grid;
+    // grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ourPage_list_grid {
+    display: grid;
+
+    column-gap: 20px;
+    row-gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.our_descr_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 20px;
+    img {
+        width: 300px;
+    }
+    &_text {
+    }
+}

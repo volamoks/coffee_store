@@ -1,0 +1,28 @@
+@import '../../utilities/variables.scss';
+
+.grid_container__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    input {
+        border: $thin_border;
+        margin-left: 10px;
+        height: 30px;
+    }
+}
+span.filter {
+    margin-right: 20px;
+}
+
+.btn {
+    &__light {
+        width: 100px;
+        height: 31px;
+        border: $thin_border;
+    }
+    &__active {
+        color: white;
+        background-color: $main_Color4;
+    }
+}
